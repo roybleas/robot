@@ -3,12 +3,12 @@
 /log/*.log
 /tmp
 
-#ultra edit project file
-recipeindex.pui
-recipeindex.ROY-PC.Roy.pui
+
 
 #my workfile
 mywork.log
 
 #document temp files
-.~lock.*.odt#
+.~lock.*.odt#robot.prj
+robot.ROY-PC.Roy.pui
+robot.prj
