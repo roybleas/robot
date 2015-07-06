@@ -1,5 +1,5 @@
 I tried two approaches:
 
 1) The toyrobot class which is a quick hack with hard coded table size and a single class
-2) The configurable/expandable robot class which could be adjusted to have for example obstcles on the map
+2) The configurable/expandable robot class which could be adjusted to have for example obstacles on the map
  or a different size or rectangular table.
