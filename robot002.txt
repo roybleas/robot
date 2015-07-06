@@ -1,0 +1,4 @@
+# Test run 2 reports 4,3,SOUTH
+PLACE 4,4,SOUTH
+move
+Report
