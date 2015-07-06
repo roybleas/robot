@@ -5,11 +5,18 @@ describe Tablemap do
 	context "initialization" do
 		it "creates a default map" do
 			table = Tablemap.new
-			expect(table.size).to eq(5)
+			expect(table.x).to eq(5)
+			expect(table.y).to eq(5)
 		end
 		it "creates a custom map" do
 			table = Tablemap.new(8)
-			expect(table.size).to eq(8)
+			expect(table.x).to eq(8)
+			expect(table.y).to eq(8)
+		end
+		it "creates a custom size map" do
+			table = Tablemap.new(4,7) 
+			expect(table.x).to eq(4)
+			expect(table.y).to eq(7)
 		end
 	end
 	
@@ -62,4 +69,5 @@ describe Tablemap do
 			expect(@table.valid_location?(loc)).to be_falsey
 		end
 	end
+	
 end

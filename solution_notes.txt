@@ -1,5 +1,9 @@
 I tried two approaches:
 
 1) The toyrobot class which is a quick hack with hard coded table size and a single class
-2) The configurable/expandable robot class which could be adjusted to have for example obstacles on the map
- or a different size or rectangular table.
+2) The robot class which can be configured to have a different size table, including rectangular.
+   It could easily be extended to for example : 
+   		have obstacles on the map to avoid;
+   		new instructions like turn around on encountering a table edge;
+   		turn 45º instead of 90º.
+ 
