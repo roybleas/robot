@@ -27,6 +27,10 @@ describe Location do
 			expect(locA == locB).to be_truthy
 			expect(locB).to eq(locA)
 		end
+		it "rejects invalid initial location" do
+			invalid_location = "1,WEST,2"
+			expect {Location.new(invalid_location) }.to raise_error("Invalid initial direction:#{invalid_location}")
+		end
 	end
 	
 	context "valid facing values" do

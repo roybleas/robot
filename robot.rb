@@ -61,7 +61,6 @@ class Robot
 		if @location.nil?
 			puts "Not yet placed"
 		else
-			#puts "I am at #{@location.x},#{@location.y} facing #{@location.facing}"
 			puts "#{@location.x},#{@location.y},#{@location.facing}"
 		end
 	end
@@ -69,23 +68,26 @@ end
 
 class Location
 	attr_accessor :x , :y, :facing
-	
-	
+		
 	def initialize(x = 0, y = 0, facing = 'NORTH')
 		
-		match = self.valid.match(x) if x.respond_to?(:to_str)
-		if match.nil?
-				@x = x
-				@y = y
-				@facing = facing
+		if x.respond_to?(:to_str)
+			if self.valid_instruction?(x)
+				set_location(x)
+			else
+				raise(InvalidLocationInputError, "Invalid initial direction:#{x}")
+			end
 		else
-			set_location(x)
+			@x = x
+			@y = y
+			@facing = facing
 		end
 		
 	end
 	
-	def valid
-		return /^\d+,\d+,(NORTH|SOUTH|EAST|WEST)$/i
+	def valid_instruction?(instruction)
+		location_regex_pattern = /^\d+,\d+,(NORTH|SOUTH|EAST|WEST)$/i
+		return !(location_regex_pattern.match(instruction)).nil?
 	end
 	
 	def facing= direction 
@@ -213,7 +215,7 @@ class Instructions
 	end
 	
 	def is_valid_location?(location)
-		return !(location =~ Location.new.valid).nil?
+		return Location.new.valid_instruction?(location)
 	end
 	
 end
