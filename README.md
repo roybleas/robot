@@ -57,3 +57,10 @@ c) PLACE 1,2,EAST MOVE MOVE LEFT MOVE REPORT Output: 3,3,NORTH
 
 Deliverables: The Ruby source files, the test data and any test code. It is not required to provide any graphical output showing the movement of the toy robot.
 
+* Test runs
+ruby run_robot.rb ../run/robot001.txt
+ruby run_robot.rb ../run/robot002.txt
+ruby run_robot.rb ../run/robot003.txt
+ruby run_robot.rb ../run/robot004.txt
+ruby run_robot.rb ../run/robot005.txt
+ruby run_robot_2.rb ../run/robot006.txt
