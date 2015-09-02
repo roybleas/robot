@@ -1,4 +1,0 @@
-# Test run 3 reports 4,0,SOUTH
-PLACE 4,4,SOUTH
-move move move move move move
-Report
