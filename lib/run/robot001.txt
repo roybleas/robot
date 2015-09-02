@@ -1,0 +1,4 @@
+# Test run 1 reports 1,0, North
+PLACE 0,0,NORTH
+move
+Report

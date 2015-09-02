@@ -1,6 +1,5 @@
 require_relative 'robot'
 
-
 robot = Robot.new(Tablemap.new)
 file_instructions = Instructions.new
 

@@ -1,5 +1,5 @@
 require "spec_helper"
-require '././robot'
+require '././lib/robot/tablemap'
 
 describe Tablemap do
 	context "initialization" do

@@ -1,5 +1,5 @@
 require "spec_helper"
-require '././robot'
+require '././lib/robot/location'
 
 describe Location do
 	describe "initialization" do

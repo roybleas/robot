@@ -1,5 +1,5 @@
 require "spec_helper"
-require '././robot'
+require '././lib/robot/robot'
 
 describe Robot do
 	context "initialization" do
